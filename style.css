@@ -1,0 +1,72 @@
+html {
+  font-family: 'Noto Sans JP',sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+a, li {
+  list-style-type: none;
+  text-decoration: none;
+  color: #000;
+}
+.header-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.header-logo {
+  height: 30px;
+  margin-right: auto;
+}
+.header-nav-list {
+  display: flex;
+}
+.header-nav-list li {
+  margin-right: 15px;
+}
+.header-nav-list a {
+  font-size: 14px;
+  font-weight: 700;
+}
+.header-nav-list li:last-child {
+  margin-right: 0;
+}
+.header-nav-menu {
+  margin-left: auto;
+  display: flex;
+}
+.header-nav-menu li {
+  margin-right: 15px;
+}
+.bread-nav-list {
+  max-width: 1270px;
+  margin: 0 auto 25px auto;
+  display: flex;
+}
+.bread-nav-list li {
+  margin-right: 10px;
+  color: #999;
+}
+.key-visual {
+  height: 250px;
+  width: 100%;
+  background: url("images/nri_building_image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.page-title {
+  color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.page-title p {
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+.page-title h1 {
+  font-size: 28px;
+}
