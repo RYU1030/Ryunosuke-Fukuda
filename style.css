@@ -16,6 +16,9 @@ img {
 .fab {
   font-size: 28px;
 }
+.fa-bars {
+  font-size: 30px;
+}
 .header-container {
   padding: 20px;
   display: flex;
@@ -44,6 +47,7 @@ img {
 .header-nav-menu {
   margin-left: auto;
   display: flex;
+  align-items: center;
 }
 .header-nav-menu li {
   margin-right: 15px;
@@ -54,6 +58,7 @@ img {
   display: flex;
 }
 .bread-nav-list li {
+  font-size: 12px;
   margin-right: 10px;
   color: #999;
 }
@@ -80,7 +85,7 @@ img {
 }
 .main-contents-wrapper {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 80px auto;
 }
 .content-share {
   max-width: 800px;
@@ -97,22 +102,28 @@ img {
 }
 .main-container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 120px auto;
 }
 .title-heading {
   font-size: 22px;
   margin-bottom: 40px;
 }
-.main-container p {
+.strategy-explained {
   line-height: 1.9;
+}
+.first-paragraph {
   margin-bottom: 20px;
 }
+.second-paragraph {
+  margin-bottom: 30px;
+}
+
 .consolution {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .download-doc {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   
 }
 .link-pdf {
@@ -139,5 +150,86 @@ img {
 }
 .nri-strength {
   background-color: #deecf8;
+  padding: 20px;
+  margin-bottom: 60px;
 }
-
+.nri-strength-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nri-strength-list li {
+  padding: 0 10px;
+  width: calc(33.33333%);
+  margin: 0 0 20px 0;
+}
+.strength-wrapper h2 {
+  margin-bottom: 15px;
+}
+.strength-detail {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #fff; 
+  padding: 15px 20px;
+  text-align: center;
+  align-items: center;
+  color: #0c419a;
+  border: solid 1px #ccc;
+  line-height: 1.2;
+}
+.strength-detail::before {
+  content: "\003e";
+  position: absolute;
+  left: 10px;
+  margin: auto;
+  color: #000;
+}
+.info-container {
+  border-top: solid 1px #000;
+}
+.corporate-info {
+  font-size: 20px;
+  padding: 25px 0 35px 0;
+  border-bottom: dotted 1px #000;
+}
+.an-info-section {
+  border-bottom: dotted 1px #000;
+  padding: 30px 0;
+}
+.an-info-section ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.an-info-section li {
+  font-size: 14px;
+  margin-top: 30px;
+  padding: 0 10px;
+  display: flex;
+  color: #0c419a;
+  width: calc(25%);
+}
+.an-info-section li::before {
+  content: "\003e";
+  color: #000;
+  font-size: 3px;
+  margin-right: 6px;
+}
+.an-info-section:last-child {
+  margin-bottom: 60px;
+}
+.follow-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-top: solid 1px #999;
+  border-bottom: solid 1px #999;
+}
+.follow-us li:first-child {
+  margin-right: 60px;
+}
+.follow-us li + li {
+  font-weight: bold;
+  margin-right: 40px;
+}
