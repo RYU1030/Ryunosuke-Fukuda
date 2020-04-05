@@ -113,12 +113,18 @@ img {
 .download-doc {
   text-align: center;
   margin-bottom: 60px;
+  
 }
 .link-pdf {
   padding: 15px 20px;
   background: #005bac;
   color: #fff;
   text-align: center;
+  border: solid 1px #005bac;
+}
+.link-pdf:hover {
+  opacity: 0.6;
+  transition: 0.3s;
 }
 .link-pdf::before {
   content: "\003e";
@@ -134,3 +140,4 @@ img {
 .nri-strength {
   background-color: #deecf8;
 }
+
