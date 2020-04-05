@@ -236,10 +236,20 @@ img {
 }
 
 .footer-main-container {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 60px;
+}
+.footer-main-row1, .footer-main-row2 {
   max-width: 1286px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+}
+.footer-main-row1 {
+  margin-bottom: 60px;
+}
+.footer-main-row2 {
+  padding-bottom: 40px;
 }
 .footer-nav-box {
   width: calc(25%);
@@ -247,6 +257,8 @@ img {
 .footer-nav-box a {
   display: block;
   padding: 16px 0;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
 .footer-nav-box ul {
   display: flex;
@@ -259,5 +271,18 @@ img {
   margin-right: 6px;
 }
 .footer-nav-box li {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  color: #333;
+}
+footer {
+  margin-bottom: 112px;
+}
+.footer-bottom {
+  max-width: 1000px;
+  margin: 0 auto 15px auto;
+}
+.copy-right {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 112px;
 }
