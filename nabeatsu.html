@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JS課題2</title>
+</head>
+<body>
+<header>
+<div class="container">
+<h1>JS-世界のナベアツ</h1>
+</div><!-- /.container -->
+</header>
+</div><!-- /.container -->
+</main>
+<script>
+'use strict';
+function nabeatsu(num) {
+  if(num % 3 === 0 || String(num).match(/3/)){
+    return num +'!';
+  } else {
+    return num;
+  }
+}
+let i = 1;
+while(i <= 100) {
+  console.log(nabeatsu(i));
+  i += 1;
+}
+</script>
+</body>
+</html>
