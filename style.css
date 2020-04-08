@@ -14,28 +14,37 @@ img {
   max-width: 100%;
 }
 /* ヘッダー */
+body > header {
+  background-color: #fff;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
 .header-container {
   padding: 20px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   max-width: 1600px;
+  width: 100%;
+  padding-right: 180px;
   margin: 0 auto;
 }
 .header-logo {
   height: 30px;
-  margin-right: auto;
 }
-/* レスポンシブも頑張る場合は、メディアクエリで最小画面幅を指定して表示します。 */
 .header-nav-list {
   display: flex;
-  display: none;
+  justify-content: flex-end;
 }
 .header-nav-list li {
   margin-right: 15px;
 }
 .header-nav-list a {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
 }
 .header-nav-list li:last-child {
@@ -45,6 +54,8 @@ img {
   margin-left: auto;
   display: flex;
   align-items: center;
+  position: fixed;
+  right: 0;
 }
 .fa-bars {
   font-size: 30px;
@@ -55,6 +66,10 @@ img {
  /* ヘッダー終わり */
 
  /* ここからメイン*/
+main {
+  margin-top: 70px;
+}
+
 .bread-nav-list {
   max-width: 1270px;
   margin: 0 auto 25px auto;
@@ -114,6 +129,7 @@ img {
 .link-to-sns {
   width: 172px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-left: auto;
 }
