@@ -13,17 +13,12 @@ a, li {
 img {
   max-width: 100%;
 }
-.fab {
-  font-size: 30px;
-}
-.fa-bars {
-  font-size: 30px;
-}
+/* ヘッダー */
 .header-container {
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -31,8 +26,10 @@ img {
   height: 30px;
   margin-right: auto;
 }
+/* レスポンシブも頑張る場合は、メディアクエリで最小画面幅を指定して表示します。 */
 .header-nav-list {
   display: flex;
+  display: none;
 }
 .header-nav-list li {
   margin-right: 15px;
@@ -49,9 +46,15 @@ img {
   display: flex;
   align-items: center;
 }
-.header-nav-menu li {
-  margin-right: 15px;
+.fa-bars {
+  font-size: 30px;
 }
+.header-nav-menu li {
+  margin-right: 30px;
+}
+ /* ヘッダー終わり */
+
+ /* ここからメイン*/
 .bread-nav-list {
   max-width: 1270px;
   margin: 0 auto 25px auto;
@@ -77,17 +80,21 @@ img {
   padding-top: 40px;
 }
 .page-title p {
-  opacity: 0.8;
+  font-size: 18px;
+  opacity: 0.95;
   margin-bottom: 25px;
 }
 .page-title h1 {
   font-size: 28px;
 }
+
 .main-contents-wrapper {
   max-width: 1000px;
   margin: 0 auto 80px auto;
 }
-
+.fab {
+  font-size: 30px;
+}
 .fa-facebook {
   color: #315096;
 }
@@ -96,6 +103,9 @@ img {
 }
 .fa-linkedin {
   color: #0079ba;
+}
+.fa-file-pdf {
+  color: #FDFEFD;
 }
 .content-share {
   max-width: 800px;
@@ -108,6 +118,7 @@ img {
   margin-left: auto;
 }
 .link-to-sns li {
+  font-size: 12px;
   margin-right: 10px;
 }
 .main-container {
@@ -117,6 +128,19 @@ img {
 .title-heading {
   font-size: 22px;
   margin-bottom: 40px;
+  padding-left: 32px;
+  position: relative;
+}
+.title-heading::before {
+  content: "";
+  background: url("images/bg-heading-h2.png") no-repeat;
+  display: inline-block;
+  margin-right: 8px;
+  background-size: contain;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  left: 0;
 }
 .strategy-explained {
   line-height: 1.9;
@@ -127,17 +151,15 @@ img {
 .second-paragraph {
   margin-bottom: 30px;
 }
-
 .consolution {
   margin-bottom: 40px;
 }
 .download-doc {
   text-align: center;
   margin-bottom: 80px;
-  
 }
 .link-pdf {
-  padding: 15px 20px;
+  padding: 20px 20px;
   background: #005bac;
   color: #fff;
   text-align: center;
@@ -148,6 +170,7 @@ img {
   transition: 0.3s;
 }
 .link-pdf::before {
+  margin-right: 10px;
   content: "\003e";
 }
 .articles-link {
@@ -188,6 +211,10 @@ img {
   border: solid 1px #ccc;
   line-height: 1.2;
 }
+.strength-detail:hover {
+   background-color: #ddd;
+   transition: 0.3s;
+}
 .strength-detail::before {
   content: "\003e";
   position: absolute;
@@ -205,7 +232,7 @@ img {
 }
 .an-info-section {
   border-bottom: dotted 1px #000;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 .an-info-section ul {
   display: flex;
@@ -244,7 +271,12 @@ img {
   font-weight: bold;
   margin-right: 40px;
 }
+.prev-page {
+  color: #005bac;
+}
+/* メインここまで */
 
+/* セカンドラッパー */
 .sitemap {
   border-bottom: 1px solid #ccc;
   margin-bottom: 60px;
@@ -270,6 +302,13 @@ img {
   font-weight: bold;
   margin-bottom: 16px;
 }
+.sitemap-nav-box a::before {
+  content: "\003e";
+  color: #000;
+  font-size: 3px;
+  margin-right: 6px;
+  font-weight: normal;
+}
 .sitemap-nav-box ul {
   display: flex;
   flex-direction: column;
@@ -281,18 +320,37 @@ img {
   margin-right: 6px;
 }
 .sitemap-nav-box li {
-  margin-bottom: 20px;
+  font-size: 14px;
+  margin-bottom: 28px;
   color: #333;
 }
+.crucial-link {
+  font-weight: bold;
+}
+/* セカンドラッパー終わり */
+
+/* ここからフッター*/
 footer {
   margin-bottom: 112px;
 }
 .footer-list {
   max-width: 1000px;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 20px auto;
+}
+.footer-list li {
+  margin-right: 10px;
+  font-size: 12px;
+  color: #999;
+}
+.footer-list li + li::before {
+  content: "|";
+  margin-right: 10px;
 }
 .copy-right {
+  font-size: 8px;
+  font-style: normal;
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 112px;
 }
+/* フッター終わり */
