@@ -30,11 +30,12 @@ li {
 
 /* ここからメイン */
 .key-visual {
-  background-image: url("images/home_top/home_top.png");
   height: 744px;
+  background:url('images/home_top/home_top@2x.png') no-repeat center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
+  margin-bottom: 60px;
 }
 .key-message {
   max-width: 80%;
@@ -44,4 +45,14 @@ li {
   font-size: 60px;
   position: absolute;
   top: 50%;
+}
+
+.message-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.img-concept img {
+  height: 560px;
 }
