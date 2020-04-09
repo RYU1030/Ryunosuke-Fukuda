@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: sans-serif;  
+}
+
 body, h1 {
   margin: 0;
 }
@@ -11,12 +15,12 @@ li {
 }
 
 .header-container {
-  max-width: 80%;
+  max-width: 90%;
   height: 56px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 .header-container img {
   height: 24px;
@@ -31,28 +35,36 @@ li {
 /* ここからメイン */
 .key-visual {
   height: 744px;
-  background:url('images/home_top/home_top@2x.png') no-repeat center center;
+  background:url('images/home_top/home_top.png') no-repeat;
   background-size: cover;
-  background-position: center;
   position: relative;
   margin-bottom: 60px;
 }
 .key-message {
-  max-width: 80%;
+  padding: 28px 20px 28px 88px;
   margin: 0 auto;
   color:#918F89;
   background-color: #FFFFFF;
-  font-size: 60px;
+  opacity: 0.8;
+  font-size: 53px;
+  letter-spacing: 2.65px;
   position: absolute;
-  top: 50%;
+  top: 280px;
 }
 
 .message-wrapper {
   width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .img-concept img {
   height: 560px;
+}
+.suggest-life {
+  
+}
+
+.key-message-ja {
+  letter-spacing: 2.5px;
 }
