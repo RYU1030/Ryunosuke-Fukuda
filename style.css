@@ -225,6 +225,7 @@ main {
   margin-bottom: 15px;
 }
 .strength-detail {
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: center;
