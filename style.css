@@ -11,6 +11,9 @@ a, li {
   color: #000;
   cursor: pointer;
 }
+a:hover {
+  text-decoration: underline;
+}
 img {
   max-width: 100%;
 }
@@ -45,8 +48,11 @@ body > header {
   margin-right: 15px;
 }
 .header-nav-list a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
+}
+.header-nav-list a:hover {
+  text-decoration: none;
 }
 .header-nav-list li:last-child {
   margin-right: 0;
@@ -185,6 +191,7 @@ main {
 .link-pdf:hover {
   opacity: 0.6;
   transition: 0.3s;
+  text-decoration: none;
 }
 .link-pdf::before {
   margin-right: 10px;
@@ -231,12 +238,13 @@ main {
 .strength-detail:hover {
    background-color: #ddd;
    transition: 0.3s;
+   text-decoration: none;
 }
 .strength-detail::before {
   content: "\003e";
+  font-size: 3px;
   position: absolute;
   left: 10px;
-  margin: auto;
   color: #000;
 }
 .info-container {
@@ -266,17 +274,20 @@ main {
   cursor: pointer;
   color: #0c419a;
 }
-.an-info-section:hover {
-  text-decoration: underline;
-}
 .an-info-section li::before {
-  content: "\003e";
-  color: #000;
-  font-size: 3px;
+  content: "";
+  background: url("images/icon-chevronRight.svg") no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
   margin-right: 6px;
 }
 .an-info-section:last-child {
   margin-bottom: 60px;
+}
+.prev-page {
+  color: #005bac;
 }
 .follow-us {
   display: flex;
@@ -293,9 +304,6 @@ main {
 .follow-us li {
   font-weight: bold;
   margin-right: 40px;
-}
-.prev-page {
-  color: #005bac;
 }
 /* メインここまで */
 
@@ -319,28 +327,24 @@ main {
 .sitemap-nav-box {
   width: calc(25%);
 }
-.sitemap-nav-box a {
+.sitemap-direction-title {
   display: block;
   padding: 16px 0;
   font-weight: bold;
   margin-bottom: 16px;
 }
 .sitemap-nav-box a::before {
-  content: "\003e";
-  color: #000;
-  font-size: 3px;
+  content: "";
+  background: url("images/icon-chevronRight.svg") no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
   margin-right: 6px;
-  font-weight: normal;
 }
 .sitemap-nav-box ul {
   display: flex;
   flex-direction: column;
-}
-.sitemap-nav-box li::before {
-  content: "\003e";
-  color: #000;
-  font-size: 3px;
-  margin-right: 6px;
 }
 .sitemap-nav-box li {
   font-size: 14px;
@@ -360,7 +364,7 @@ footer {
   max-width: 1000px;
   margin: 0 auto 20px auto;
 }
-.footer-list li {
+.footer-list a {
   margin-right: 10px;
   font-size: 12px;
   color: #999;
@@ -368,9 +372,10 @@ footer {
 .footer-list li + li::before {
   content: "|";
   margin-right: 10px;
+  color: #999;
 }
 .copy-right {
-  font-size: 8px;
+  font-size: 6px;
   font-style: normal;
   max-width: 1000px;
   margin: 0 auto;
