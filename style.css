@@ -48,6 +48,7 @@ body > header {
   margin-right: 20px;
 }
 .header-nav-list a {
+  letter-spacing: 0;
   font-size: 14px;
   font-weight: 700;
 }
@@ -84,7 +85,7 @@ main {
 }
 .bread-nav-list li {
   font-size: 12px;
-  margin-right: 10px;
+  margin-right: 5px;
   color: #999;
 }
 .key-visual {
@@ -96,14 +97,15 @@ main {
   margin-bottom: 30px;
 }
 .page-title {
+  line-height: 1.2;
   color: #fff;
   max-width: 1000px;
   margin: 0 auto;
   padding-top: 40px;
 }
 .page-title p {
-  font-size: 18px;
-  opacity: 0.95;
+  font-size: 20px;
+  font-weight: 100;
   margin-bottom: 25px;
 }
 .page-title h1 {
