@@ -45,7 +45,7 @@ body > header {
   justify-content: flex-end;
 }
 .header-nav-list li {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 .header-nav-list a {
   font-size: 14px;
@@ -288,6 +288,15 @@ main {
 }
 .prev-page {
   color: #005bac;
+}
+.prev-page::before {
+  content: "";
+  background: url("images/icon-chevronLeft.svg") no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
 }
 .follow-us {
   display: flex;
