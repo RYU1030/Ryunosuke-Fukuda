@@ -1,0 +1,395 @@
+html {
+  font-family: 'Noto Sans JP',sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+a, li {
+  display: inline-block;
+  list-style-type: none;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+}
+/* ヘッダー */
+body > header {
+  background-color: #fff;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.header-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  width: 100%;
+  padding-right: 180px;
+  margin: 0 auto;
+}
+.header-logo {
+  height: 30px;
+}
+.header-nav-list {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-nav-list li {
+  margin-right: 20px;
+}
+.header-nav-list a {
+  letter-spacing: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+.header-nav-list a:hover {
+  text-decoration: none;
+}
+.header-nav-list li:last-child {
+  margin-right: 0;
+}
+.header-nav-menu {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 0;
+}
+.fa-bars {
+  font-size: 30px;
+}
+.header-nav-menu li {
+  margin-right: 30px;
+}
+ /* ヘッダー終わり */
+
+ /* ここからメイン*/
+main {
+  margin-top: 70px;
+}
+
+.bread-nav-list {
+  max-width: 1270px;
+  margin: 0 auto 25px auto;
+  display: flex;
+}
+.bread-nav-list li {
+  font-size: 12px;
+  margin-right: 5px;
+  color: #999;
+}
+.key-visual {
+  height: 250px;
+  width: 100%;
+  background: url("images/nri_building_image.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.page-title {
+  line-height: 1.2;
+  color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.page-title p {
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 25px;
+}
+.page-title h1 {
+  font-size: 28px;
+}
+
+.main-contents-wrapper {
+  max-width: 1000px;
+  margin: 0 auto 80px auto;
+}
+.fab {
+  font-size: 30px;
+}
+.fa-facebook {
+  color: #315096;
+}
+.fa-twitter {
+  color: #55acee;
+}
+.fa-linkedin {
+  color: #0079ba;
+}
+.fa-file-pdf {
+  color: #FDFEFD;
+}
+.content-share {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+.link-to-sns {
+  width: 172px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+.link-to-sns li {
+  font-size: 12px;
+  margin-right: 10px;
+}
+.main-container {
+  max-width: 800px;
+  margin: 0 auto 120px auto;
+}
+.title-heading {
+  font-size: 22px;
+  margin-bottom: 40px;
+  padding-left: 32px;
+  position: relative;
+}
+.title-heading::before {
+  content: "";
+  background: url("images/bg-heading-h2.png") no-repeat;
+  display: inline-block;
+  margin-right: 8px;
+  background-size: contain;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  left: 0;
+}
+.strategy-explained {
+  line-height: 1.9;
+}
+.first-paragraph {
+  margin-bottom: 20px;
+}
+.second-paragraph {
+  margin-bottom: 30px;
+}
+.consolution {
+  margin-bottom: 40px;
+}
+.download-doc {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.link-pdf {
+  padding: 20px 20px;
+  background: #005bac;
+  color: #fff;
+  text-align: center;
+  border: solid 1px #005bac;
+}
+.link-pdf:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.link-pdf::before {
+  margin-right: 10px;
+  content: "\003e";
+}
+.articles-link {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.articles-link li > p > a {
+  color: #005bac;
+}
+.nri-strength {
+  background-color: #deecf8;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+.nri-strength-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nri-strength-list li {
+  padding: 0 10px;
+  width: calc(33.33333%);
+  margin: 0 0 20px 0;
+}
+.strength-wrapper h2 {
+  margin-bottom: 15px;
+}
+.strength-detail {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #fff; 
+  padding: 15px 19px;
+  text-align: center;
+  align-items: center;
+  color: #0c419a;
+  border: solid 1px #ccc;
+  line-height: 1.2;
+}
+.strength-detail:hover {
+   background-color: #ddd;
+   transition: 0.3s;
+   text-decoration: none;
+}
+.strength-detail::before {
+  content: "\003e";
+  font-size: 3px;
+  position: absolute;
+  left: 10px;
+  color: #000;
+}
+.info-container {
+  border-top: solid 1px #000;
+}
+.corporate-info {
+  font-size: 20px;
+  padding: 25px 0 35px 0;
+  border-bottom: dotted 1px #000;
+}
+.an-info-section {
+  border-bottom: dotted 1px #000;
+  padding: 40px 0;
+}
+.an-info-section ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.an-info-section li {
+  font-size: 14px;
+  margin-top: 30px;
+  padding: 0 10px;
+  display: flex;
+  width: calc(25%);
+}
+.an-info-section a {
+  cursor: pointer;
+  color: #0c419a;
+}
+.an-info-section li::before {
+  content: "";
+  background: url("images/icon-chevronRight.svg") no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+}
+.an-info-section:last-child {
+  margin-bottom: 60px;
+}
+.prev-page {
+  color: #005bac;
+}
+.prev-page::before {
+  content: "";
+  background: url("images/icon-chevronLeft.svg") no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+}
+.follow-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-top: solid 2px #999;
+  border-bottom: solid 2px #999;
+  margin-bottom: 40px;
+}
+.follow-us li:first-child {
+  margin-right: 60px;
+}
+.follow-us li {
+  font-weight: bold;
+  margin-right: 40px;
+}
+/* メインここまで */
+
+/* セカンドラッパー */
+.sitemap {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 60px;
+}
+.sitemap-first-row, .sitemap-second-row {
+  max-width: 1286px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sitemap-first-row {
+  margin-bottom: 60px;
+}
+.sitemap-second-row {
+  padding-bottom: 40px;
+}
+.sitemap-nav-box {
+  width: calc(25%);
+}
+.sitemap-direction-title {
+  display: block;
+  padding: 16px 0;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.sitemap-nav-box a::before {
+  content: "";
+  background: url("images/icon-chevronRight.svg") no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+}
+.sitemap-nav-box ul {
+  display: flex;
+  flex-direction: column;
+}
+.sitemap-nav-box li {
+  font-size: 14px;
+  margin-bottom: 28px;
+  color: #333;
+}
+.crucial-link {
+  font-weight: bold;
+}
+/* セカンドラッパー終わり */
+
+/* ここからフッター*/
+footer {
+  margin-bottom: 112px;
+}
+.footer-list {
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+}
+.footer-list a {
+  margin-right: 10px;
+  font-size: 12px;
+  color: #999;
+}
+.footer-list li + li::before {
+  content: "|";
+  margin-right: 10px;
+  color: #999;
+}
+.copy-right {
+  font-size: 6px;
+  font-style: normal;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 112px;
+}
+/* フッター終わり */
