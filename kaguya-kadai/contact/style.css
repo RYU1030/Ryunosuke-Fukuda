@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.key-visual {
+  background: url("images/contact_top/contact_top@2x.png");
+  background-size: 100% 100%;
+}
+.key-visual h1 {
+  color: #fff;
+}

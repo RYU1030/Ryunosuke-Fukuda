@@ -121,10 +121,31 @@ h2 {
   margin-top: 26px;
   margin-right: 56px;
 }
+.page-list a {
+  color: #B2B2B2;
+}
+li > .current-page {
+  color: #3B3B3B;
+}
 .page-list li:last-child {
   margin-right: 96px;
 }
 /* ヘッダーおわり */
+/* キービジュアル */
+.key-visual {
+  position: relative;
+  height: 456px;
+  background-size: 100% 100%;
+  margin-bottom: 160px;
+}
+.key-visual h1 {
+  position: absolute;
+  top: 191px;
+  left: 228px;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+/* キービジュアルおわり */
 /* フッター */
 footer {
   height: 240px;
