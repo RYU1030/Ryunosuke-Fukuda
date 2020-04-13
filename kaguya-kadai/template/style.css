@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* ====== リセットcss ====== */
+* {
+  box-sizing: border-box;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body{
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul{
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a{
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins{
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark{
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr{
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+/* ====== リセットcssおわり ====== */
+html {
+  color: #3B3B3B;
+}
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #3B3B3B;
+}
+h2 {
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  margin-bottom: 48px;
+}
+/* ヘッダー */
+.header-container {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-container img {
+  margin-top: 16px;
+  margin-left: 96px;
+  height: 24px;
+}
+.page-list {
+  display: flex;
+}
+.page-list li {
+  margin-top: 26px;
+  margin-right: 56px;
+}
+.page-list li:last-child {
+  margin-right: 96px;
+}
+/* ヘッダーおわり */
+/* フッター */
+footer {
+  height: 240px;
+  background-color: #918F89;
+  padding-bottom: 24px;
+}
+.footer-container {
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 41px;
+}
+.footer-container img {
+  height: 40px;
+  margin-left: 224px;
+}
+.footer-container li {
+  margin-top: 0px;
+  margin-right: 32px;
+}
+.footer-container li:last-child {
+  margin-right: 224px;
+}
+.footer-container a {
+  color: #fff;
+}
+small {
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  color: #fff;
+  letter-spacing: 0.44px;
+}
+/* フッターおわり */

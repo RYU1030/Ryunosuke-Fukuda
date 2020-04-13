@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* キービジュアル */
+.key-visual {
+  position: relative;
+  height: 456px; 
+  background: url("images/news_top@2x.png");
+  background-size: 100% 100%;
+  margin-bottom: 160px;
+}
+.key-visual h1 {
+  position: absolute;
+  top: 191px;
+  left: 228px;
+  font-size: 30px;
+}
+/* キービジュアルおわり */
+/* 入荷情報 */
+.stock-info h2 {
+  margin-bottom: 56px;
+  letter-spacing: 2.3px;
+  text-align: center;
+}
+.furniture-news {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 320px;
+}
+.furniture-news li {
+  position: relative;
+  background-color: #000;
+  margin-right: 64px;
+}
+.furniture-news li:last-child {
+  margin-right: 0;
+}
+.furniture-news img {
+  height: 100%;
+  width: 320px;
+  opacity: 0.6;
+}
+.furniture-news p {
+  position: absolute;
+  color: #fff;
+  top: 144px;
+  left: 47px;
+}
+/* 入荷情報 おわり */
