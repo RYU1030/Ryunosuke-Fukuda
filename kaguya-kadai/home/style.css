@@ -154,18 +154,23 @@ li > .current-page {
 /* キービジュアルおわり */
 /* メッセージ */
 .message-wrapper {
+  position: relative;
   height: 560px;
+  max-width: 1280px;
+  margin: 0 auto 240px auto;
   display: flex;
-  justify-content: center;
-  margin-bottom: 240px;
 }
 .img-concept img {
+  position: absolute;
+  left: 88px;
   margin-right: 56px;
   height: 560px;
   width: 560px;
 }
 .suggest-life {
-  padding-top: 240px;
+  position: absolute;
+  top: 240px;
+  left: 744px;
 }
 .key-message-ja {
   margin-bottom: 71px;
@@ -182,9 +187,9 @@ li > .current-page {
 /* キービジュアルおわり */
 /* ニュースゾーン */
 .news-zone {
-  margin-bottom: 240px;
+  max-width: 1280px;
+  margin: 0 auto 240px auto;
 }
-
 .news-zone h2 {
   font-size: 23px;
   letter-spacing: 2.3px;
