@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ホーム</title>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -30,7 +31,12 @@
     </div>
     <div class="suggest-life">
       <h2 class="key-message-ja">暮らしを提案する。</h2>
-      <p>私たちは、家具を売るのではなく、お客様の理想とする <br>「暮らし」を提案します。 <br>仕事で疲れた後に帰りたくなる、<br>今日も１日頑張ろうと思える、<br>そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。</p>
+      <p>私たちは、家具を売るのではなく、お客様の理想とする 
+        <br>「暮らし」を提案します。 
+        <br>仕事で疲れた後に帰りたくなる、
+        <br>今日も１日頑張ろうと思える、
+        <br>そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。
+      </p>
     </div>
   </section>
   <section class="news-zone">
@@ -38,44 +44,48 @@
     <div class="furniture-news">
       <ul class="furniture-news-list">
         <li>
-          <p class="update">アームストロングのカウチ入荷</p>
           <img src="images/news01/news01.png" alt="couch">
+          <p class="update">アームストロングのカウチ入荷</p>
         </li>
         <li>
-          <p class="update">アームストロングのチェア再入荷</p>  
           <img src="images/news02/news02.png" alt="chair">
+          <p class="update">アームストロングのチェア再入荷</p>
         </li>
-        <li>
-          <p class="update">アームストロングのテーブル入荷</p>  
+        <li>  
           <img src="images/news03/news03.png" alt="table">
+          <p class="update">アームストロングのテーブル入荷</p>
         </li>
       </ul>
     </div>
-    <a href="#">view more &gt;</a>
+    <a class="details" href="#">view more<i class="fa fa-angle-right"></i><a>
   </section>
   <section class="official-catalog">
     <h2>公式カタログ</h2>
-    <p>様々なスタイルをご提案いたします。オーダーメイドも可能です。 <br>詳しくはカタログをご覧ください。</p>
+    <p>様々なスタイルをご提案いたします。オーダーメイドも可能です。 
+      <br>詳しくはカタログをご覧ください。
+    </p>
     <a class="pdf-download" href="#">カタログをダウンロード</a>
   </section>
-  <section class="contact-form"> 
+  <section class="contact-zone"> 
     <h2>CONTACT</h2>
-    <form action="#" method="post">
-      <input type="text">
-      <input type="text">
-      <textarea name="query" id="query" tabindex="2"></textarea>
-      <input type="submit" value="SEND">
+    <form class="contact-form" action="#" method="post">
+      <input type="text" placeholder="お名前">
+      <input type="text" placeholder="メールアドレス">
+      <textarea name="query" id="query" tabindex="2" placeholder="お問い合わせ内容"></textarea>
+      <input class="submission-btn" type="submit" value="SEND">
     </form>
   </section>
-  <section class="recruit-area">
+  <section class="recruit-zone">
     <h2>RECRUIT</h2>
-    <p>現在Staffを募集しております。 <br>詳しくは詳細ページをご覧ください。</p>
-    <a href="#">view more &gt;</a>
+    <p>現在Staffを募集しております。 
+      <br>詳しくは詳細ページをご覧ください。
+    </p>
+    <a class="details" href="#">view more<i class="fa fa-angle-right"></i></a>
   </section>
 </main>
 <footer>
-  <div class="footer-contaienr">
-    <img src="images/logo_footer/logo_footer.png" alt="HTMLCSS">
+  <div class="footer-container">
+    <img src="images/logo_footer/logo_footer@2x.png" alt="HTMLCSS">
     <nav class="page-direction">
       <ul class="page-list">
         <li><a href="#">HOME</a></li>
@@ -84,7 +94,7 @@
         <li><a href="../contact/index.html">CONTACT</a></li>
       </ul>
     </nav>
-    <small>&copy;HTMLCSS.code</small>
   </div>
+  <small>&copy;HTMLCSS.code</small>
 </footer>
 </body>
