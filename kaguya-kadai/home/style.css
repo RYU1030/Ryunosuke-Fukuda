@@ -121,6 +121,12 @@ h2 {
   margin-top: 26px;
   margin-right: 56px;
 }
+.page-list a {
+  color: #B2B2B2;
+}
+li > .current-page {
+  color: #3B3B3B;
+}
 .page-list li:last-child {
   margin-right: 96px;
 }
@@ -148,20 +154,18 @@ h2 {
 /* キービジュアルおわり */
 /* メッセージ */
 .message-wrapper {
-  position: relative;
   height: 560px;
+  display: flex;
+  justify-content: center;
   margin-bottom: 240px;
 }
 .img-concept img {
-  position: absolute;
-  left: 88px;
+  margin-right: 56px;
   height: 560px;
   width: 560px;
 }
 .suggest-life {
-  position: absolute;
-  top: 240px;
-  left: 740px;
+  padding-top: 240px;
 }
 .key-message-ja {
   margin-bottom: 71px;
