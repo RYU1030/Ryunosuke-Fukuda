@@ -7,3 +7,39 @@
 .key-visual h1 {
   color: #fff;
 }
+
+.contact-form {
+  text-align: center;
+  margin-bottom: 320px;
+  color: #3B3B3B;
+}
+.contact-form p {
+  letter-spacing: 0.6px;
+  margin-bottom: 72px;
+}
+input, textarea {
+  display: block;
+  margin: 0 auto;
+  width: 454px;
+  padding: 10px 16px;
+  border: solid 1px #707070;
+  border-radius: 16px;
+  opacity: 0.6;
+}
+input {
+  margin-bottom: 24px;
+}
+textarea {
+  margin-bottom: 40px;
+  height: 200px;
+}
+.submission-btn {
+  font-size: 14px;
+  color: #707070;
+  padding: 7px 60px 6px 60px;
+  letter-spacing: 1.4px;
+  background-color: #D1D1D1;
+  width: 161px;
+  border: none;
+  opacity: 1;
+}
