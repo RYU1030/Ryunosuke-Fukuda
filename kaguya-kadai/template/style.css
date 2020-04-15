@@ -99,9 +99,17 @@ a {
   color: #3B3B3B;
 }
 h2 {
-  font-size: 24px;
-  letter-spacing: 2.4px;
-  margin-bottom: 48px;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 2.2px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 376px) {
+  h2 {
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    margin-bottom: 48px;
+  }
 }
 /* ヘッダー */
 .header-container {
@@ -156,15 +164,31 @@ h2 {
 /* キービジュアル */
 .key-visual {
   position: relative;
-  height: 456px;
+  padding-top: 256px;
+  text-align: center;
   margin-bottom: 160px;
 }
-.key-visual h1 {
-  position: absolute;
-  top: 191px;
-  left: 228px;
-  font-size: 30px;
-  letter-spacing: 3px;
+.responsive-title{
+  font-size: 25px;
+  color: #3B3B3B;
+  letter-spacing: 2.5px;
+}
+.default-title {
+  display: none;
+}
+@media screen and (min-width: 376px) {
+  .default-title {
+    position: absolute;
+    top: 191px;
+    left: 228px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    display: block;
+    color: #918F89;
+  }
+  .responsive-title {
+    display: none;
+  }
 }
 /* キービジュアルおわり */
 /* フッター */
