@@ -101,6 +101,7 @@ a {
 h2 {
   text-align: center;
   font-size: 22px;
+  font-weight: normal;
   letter-spacing: 2.2px;
   margin-bottom: 32px;
 }
@@ -163,6 +164,7 @@ h2 {
 /* ヘッダーおわり */
 /* キービジュアル */
 .key-visual {
+  height: 704px;
   position: relative;
   padding-top: 256px;
   text-align: center;
@@ -177,6 +179,9 @@ h2 {
   display: none;
 }
 @media screen and (min-width: 376px) {
+  .key-visual {
+    height: 456px;
+  }
   .default-title {
     position: absolute;
     top: 191px;

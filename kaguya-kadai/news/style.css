@@ -12,6 +12,9 @@
 }
 /* キービジュアルおわり */
 /* 入荷情報 */
+.stock-info {
+  margin-bottom: 256px;
+}
 .furniture-news li {
   position: relative;
   margin: 0 auto 24px auto;
@@ -26,13 +29,14 @@
   opacity: 0.6;
 }
 .furniture-news p {
-  font-size: 14px;
   position: absolute;
+  top: 122px;
+  width: 100%;
+  padding: 0 36.5px;
+  font-size: 15px;
   color: #fff;
   letter-spacing: -0.75px;
-  padding: 0 36.5px 0 36.5px;
   text-shadow: 0px 0px 6px #000000E0;
-  top: 122px;
 }
 @media screen and (min-width: 376px) {
   .stock-info h2 {
