@@ -24,7 +24,7 @@ time, mark, audio, video{
     background:transparent;
 }
 body{
-    line-height:1;
+    /* line-height:1; */
 }
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
@@ -107,7 +107,6 @@ a {
 }
 h2 {
   font-size: 24px;
-  letter-spacing: 2.4px;
   margin-bottom: 32px;
 }
 /* ヘッダー */
@@ -177,9 +176,9 @@ h2 {
   letter-spacing: 1.95px;
   background-color: #fff;
   padding: 16px 16px 16px 54px;
-  line-height: 37px;
   height: 80px;
   margin-bottom: 16px;
+  opacity: 0.6;
 }
 .key-visual p:first-of-type {
   width: 136px;
@@ -231,6 +230,7 @@ h2 {
   font-size: 21px;
   font-weight: normal;
   letter-spacing: 2.1px;
+  padding-left: 7.5px;
   margin-bottom: 32px;
 }
 .suggest-life p {
@@ -268,6 +268,7 @@ h2 {
   .key-message-ja {
     margin-bottom: 71px;
     font-size: 25px;
+    padding-left: 0;
     font-weight: normal;
     letter-spacing: 2.5px;
   }
@@ -390,7 +391,9 @@ left: 36.5px;
   display: block;
   margin: 0 auto;
   width: 280px;
+  color: #707070;
   background-color: #D1D1D1;
+  letter-spacing: 1.8px;
   padding: 19px 32px;
   border-radius: 40px;
 }
@@ -449,6 +452,7 @@ textarea {
     color: #707070;
     background-color: #D1D1D1;
     opacity: 1;
+    letter-spacing: 0.9px;
     border: none;
     padding: 12px 0;
     margin-bottom: 0;
@@ -519,35 +523,56 @@ textarea {
 /* リクルートおわり */
 /* フッター */
 footer {
+  padding: 72px 0 32px 0;
   height: 240px;
   background-color: #918F89;
-  padding-bottom: 24px;
-}
-.footer-container {
-  padding-top: 120px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 41px;
 }
 .footer-container img {
-  height: 40px;
-  margin-left: 224px;
-}
-.footer-container li {
-  margin-top: 0px;
-  margin-right: 32px;
-}
-.footer-container li:last-child {
-  margin-right: 224px;
-}
-.footer-container a {
-  color: #fff;
+  height: 30px;
+  display: block;
+  margin: 0 auto 82px auto;
 }
 small {
   display: block;
   text-align: center;
-  font-size: 11px;
+  font-size: 14px;
   color: #fff;
-  letter-spacing: 0.44px;
+  letter-spacing: 0.4px;
+}
+@media screen and (min-width: 376px) {
+  footer {
+    padding: 0;
+    height: 240px;
+    background-color: #918F89;
+    padding-bottom: 24px;
+  }
+  .footer-container {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 41px;
+  }
+  .footer-container img {
+    height: 40px;
+    margin-left: 224px;
+    margin-bottom: 0;
+  }
+  .footer-container li {
+    margin-top: 0px;
+    margin-right: 32px;
+  }
+  .footer-container li:last-child {
+    margin-right: 224px;
+  }
+  .footer-container a {
+    color: #fff;
+  }
+  small {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+    letter-spacing: 0.44px;
+  }
 }
 /* フッターおわり */
