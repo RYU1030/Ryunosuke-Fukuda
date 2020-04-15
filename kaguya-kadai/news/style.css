@@ -1,11 +1,24 @@
 @charset "utf-8";
 /* キービジュアル */
 .key-visual {
-  background: url("images/news_top@2x.png");
-  background-size: 100% 100%;
+  height: 704px;
+  background: url("images/news_top_sp/news_top_sp.png");
 }
-.key-visual h1 {
-  color: #918F89;
+.responsive-title{
+  display: block;
+}
+.default-title {
+  display: none;
+}
+@media screen and (min-width: 376px) {
+  .key-visual {
+    background: url("images/news_top@2x.png");
+    background-size: 100% 100%;
+  }
+  .default-title {
+    display: block;
+    color: #918F89;
+  }
 }
 /* キービジュアルおわり */
 /* 入荷情報 */

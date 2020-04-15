@@ -105,30 +105,52 @@ h2 {
 }
 /* ヘッダー */
 .header-container {
-  height: 56px;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+  padding: 16px 0;
+  background-color: #918F89;
 }
-.header-container img {
-  margin-top: 16px;
-  margin-left: 96px;
+.default-logo {
+  display: none;
+}
+.responsive-logo {
   height: 24px;
 }
 .page-list {
-  display: flex;
+  display: none;
 }
-.page-list li {
-  margin-top: 26px;
-  margin-right: 56px;
-}
-.page-list a {
-  color: #B2B2B2;
-}
-li > .current-page {
-  color: #3B3B3B;
-}
-.page-list li:last-child {
-  margin-right: 96px;
+@media screen and (min-width: 376px) {
+  .header-container {
+    background-color: #fff;
+    padding: 0;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .default-logo {
+    display: block;
+    margin-top: 16px;
+    margin-left: 96px;
+    height: 24px;
+  }
+  .responsive-logo {
+    display: none;
+  }
+  .page-list {
+    display: flex;
+  }
+  .page-list li {
+    margin-top: 26px;
+    margin-right: 56px;
+  }
+  .page-list a {
+    color: #B2B2B2;
+  }
+  li > .current-page {
+    color: #3B3B3B;
+  }
+  .page-list li:last-child {
+    margin-right: 96px;
+  }
 }
 /* ヘッダーおわり */
 /* キービジュアル */
@@ -147,35 +169,56 @@ li > .current-page {
 /* キービジュアルおわり */
 /* フッター */
 footer {
+  padding: 72px 0 32px 0;
   height: 240px;
   background-color: #918F89;
-  padding-bottom: 24px;
-}
-.footer-container {
-  padding-top: 120px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 41px;
 }
 .footer-container img {
-  height: 40px;
-  margin-left: 224px;
-}
-.footer-container li {
-  margin-top: 0px;
-  margin-right: 32px;
-}
-.footer-container li:last-child {
-  margin-right: 224px;
-}
-.footer-container a {
-  color: #fff;
+  height: 30px;
+  display: block;
+  margin: 0 auto 82px auto;
 }
 small {
   display: block;
   text-align: center;
-  font-size: 11px;
+  font-size: 14px;
   color: #fff;
-  letter-spacing: 0.44px;
+  letter-spacing: 0.4px;
+}
+@media screen and (min-width: 376px) {
+  footer {
+    padding: 0;
+    height: 240px;
+    background-color: #918F89;
+    padding-bottom: 24px;
+  }
+  .footer-container {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 41px;
+  }
+  .footer-container img {
+    height: 40px;
+    margin-left: 224px;
+    margin-bottom: 0;
+  }
+  .footer-container li {
+    margin-top: 0px;
+    margin-right: 32px;
+  }
+  .footer-container li:last-child {
+    margin-right: 224px;
+  }
+  .footer-container a {
+    color: #fff;
+  }
+  small {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+    letter-spacing: 0.44px;
+  }
 }
 /* フッターおわり */
