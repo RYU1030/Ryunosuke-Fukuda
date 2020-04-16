@@ -51,7 +51,7 @@ td li:last-child {
   font-size: 13px;
   background-color: rgba(145,143,137,.3);
   text-align: center;
-  padding: 0 16px 0 16px;
+  padding: 0 8px 0 8px;
 }
 @media screen and (min-width: 376px) {
   .recruit-info {

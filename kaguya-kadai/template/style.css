@@ -88,7 +88,7 @@ input, select {
 html {
   color: #3B3B3B;
 }
-body {
+body, ::placeholder {
   font-family: 'Noto Sans JP', sans-serif;
 }
 li {
