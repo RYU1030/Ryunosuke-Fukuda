@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* キービジュアル */
 .key-visual {
-  background: url("images/contact_top_sp/contact_top_sp.png");
+  background: url("../images/contact_top_sp.png");
 }
 .key-visual h1 {
   color: #FFF;
@@ -9,7 +9,7 @@
 @media screen and (min-width: 376px) {
   .key-visual {
     height: 456px;
-    background: url("images/contact_top/contact_top@2x.png");
+    background: url("../images/contact_top@2x.png");
     background-size: 100% 100%;
   }
   .key-visual h1 {

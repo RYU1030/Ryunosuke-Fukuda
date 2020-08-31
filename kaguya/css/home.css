@@ -86,6 +86,7 @@ html {
   color: #3B3B3B;
 }
 body {
+  line-height:1;
   font-family: 'Noto Sans JP', sans-serif;
 }
 li {
@@ -161,7 +162,7 @@ h2 {
 .key-visual {
   height: 800px;
   padding-top: 200px;
-  background: url("images/home_top_sp/home_top_sp.png") no-repeat;
+  background: url("../images/home_top_sp.png") no-repeat;
   margin-bottom: 88px;
 }
 .key-message {
@@ -190,7 +191,7 @@ h2 {
   .key-visual {
     position: relative;
     height: 744px;
-    background:url('images/home_top/home_top.png') no-repeat;
+    background:url('../images/home_top.png') no-repeat;
     background-size: 100% 100%;
     margin-bottom: 80px;
   }

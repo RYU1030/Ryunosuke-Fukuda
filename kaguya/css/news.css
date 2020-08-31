@@ -1,12 +1,11 @@
 @charset "utf-8";
 /* キービジュアル */
 .key-visual {
-  height: 704px;
-  background: url("images/news_top_sp/news_top_sp.png");
+  background: url("../images/news_top_sp.png");
 }
 @media screen and (min-width: 376px) {
   .key-visual {
-    background: url("images/news_top@2x.png");
+    background: url("../images/news_top@2x.png");
     background-size: 100% 100%;
   }
 }

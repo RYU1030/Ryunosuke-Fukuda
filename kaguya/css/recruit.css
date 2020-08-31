@@ -2,12 +2,12 @@
 /* キービジュアル */
 .key-visual {
   height: 704px;
-  background: url("images/recruit_top_sp/recruit_top_sp.png");
+  background: url("../images/recruit_top_sp.png");
 }
 @media screen and (min-width: 376px) {
   .key-visual {
     height: 456px;
-    background: url("images/recruit_top/recruit_top@2x.png");
+    background: url("../images/recruit_top@2x.png");
     background-size: 100% 100%;
   }
   .key-visual h1 {
