@@ -2,18 +2,12 @@
 
 $(function () {
   $('.toggle-btn').click(function () {
-      $(this).toggleClass('active');
-
-      if ($(this).hasClass('active')) {
-          $('.mobile-menu').addClass('active');
-      } else {
-          $('.mobile-menu').removeClass('active');
-      }
+    $(this).toggleClass('toggle-open');
+    $('.mobile-menu').toggleClass('active');
   });
-});
 
-$(function () {
   $('.mobile-menu').click(function () {
     $(this).toggleClass('active');
+    $('.toggle-btn').toggleClass('toggle-open');
   });
 });
