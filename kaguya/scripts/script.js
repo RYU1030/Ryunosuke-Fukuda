@@ -22,5 +22,9 @@ $(function () {
       }
     );
   }
-  
+
+  $('.submission-btn').click(function () {
+    $(this).val("TRANSMISSION COMPLETED");
+    $(this).addClass('animation');    
+  })
 });

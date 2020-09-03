@@ -403,14 +403,23 @@ textarea {
     background-color: #D1D1D1;
     opacity: 1;
     border: none;
-    width: 161px;
+    width: 160px;
     padding: 7px 60px 6px 60px;
     margin-bottom: 0;
+    transition: 3s;
   }
   .submission-btn:hover {
     color: #d1d1d1;
     background-color: #918F89;
     cursor: pointer;
+  }
+  .animation {
+    transition: .7s;
+    width: 320px;
+  }
+  .animation:hover {
+    color: #707070;
+    background-color: #D1D1D1;
   }
 }
 /* お問い合わせおわり */
