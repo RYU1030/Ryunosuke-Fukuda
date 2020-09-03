@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ホーム</title>
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/mobile.css">
-  <link rel="stylesheet" href="../css/home.css">
+  <link href="../css/reset.css" rel="stylesheet" >
+  <link href="../css/mobile.css" rel="stylesheet">
+  <link href="../css/home.css" rel="stylesheet">
   <script src="../scripts/jquery.min.js"></script>
   <script src="../scripts/script.js"></script>
 </head>
@@ -26,6 +26,7 @@
         </ul>
       </nav>
     </div>
+    <!-- モバイル版の表示 -->
     <div class="mobile-header">
       <img class="responsive-logo" src="../images/logo_footer@2x.png" alt="HTMLCSS">
       <div class="toggle-btn">
@@ -36,12 +37,13 @@
     </div>
     <nav class="mobile-menu">
       <ul>
-        <li><a class="current-page" href="#">HOME</a></li>
-        <li><a href="news.html">NEWS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="recruit.html">RECRUIT</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a class="gradual-transit" href="news.html">NEWS</a></li>
+        <li><a class="gradual-transit" href="contact.html">CONTACT</a></li>
+        <li><a class="gradual-transit" href="recruit.html">RECRUIT</a></li>
       </ul>
     </nav>
+    <!-- モバイル版の表示おわり -->
   </header>
   <main>
     <section class="key-visual">
@@ -77,16 +79,16 @@
       <h2>NEWS</h2>
       <div class="furniture-news">
         <ul class="furniture-news-list">
-          <li>
-            <img src="../images/news01.png" alt="couch">
-            <p class="update">アームストロングのカウチ入荷</p>
+          <li class="news-item">
+            <img src="../images/news01.png" alt="ブルーのカウチ">
+            <p class="update"> アームストロングのカウチ入荷</p>
           </li>
-          <li>
-            <img src="../images/news02.png" alt="chair">
+          <li class="news-item">
+            <img src="../images/news02.png" alt="真っ赤なチェア">
             <p class="update">アームストロングのチェア再入荷</p>
           </li>
-          <li>
-            <img src="../images/news03.png" alt="table">
+          <li class="news-item">
+            <img src="../images/news03.png" alt="丸いテーブル">
             <p class="update">アームストロングのテーブル入荷</p>
           </li>
         </ul>
@@ -112,8 +114,8 @@
         <input type="text" placeholder="お名前">
         <input type="text" placeholder="メールアドレス">
         <textarea name="query" id="query" tabindex="2" placeholder="お問い合わせ内容"></textarea>
-        <input class="submission-btn" type="submit" value="SEND">
-        <input class="submission-btn-responsive" type="submit" value="Send">
+        <input class="submission-btn" type="button" value="SEND">
+        <input class="submission-btn-responsive" type="button" value="Send">
       </form>
     </section>
     <section class="recruit-zone">

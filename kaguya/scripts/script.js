@@ -10,4 +10,17 @@ $(function () {
     $(this).toggleClass('active');
     $('.toggle-btn').toggleClass('toggle-open');
   });
+  
+  if (window.matchMedia('(min-width: 376px)').matches) {
+    $('.update').hide()
+    $('.news-item').mouseenter(
+      function () {
+        $(this).find('p').slideToggle("fast");
+      }).mouseleave(
+      function () {
+        $(this).find('p').slideToggle("fast");
+      }
+    );
+  }
+  
 });
