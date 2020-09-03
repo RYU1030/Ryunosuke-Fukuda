@@ -54,7 +54,11 @@
     position: relative;
     height: 320px;
     width: 320px;
+    margin: 0 64px 0 0;
     text-align: center;
+  }
+  .furniture-news-list li:last-child {
+    margin-right: 0;
   }
   .furniture-news-list img {
     position: relative;
