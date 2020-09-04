@@ -358,7 +358,7 @@ textarea {
   display: none;
 }
 .submission-btn-responsive {
-    font-size: 18px;
+    font-size: 15px;
     width: 173px;
     border-radius: 30px;
     color: #707070;
@@ -366,9 +366,14 @@ textarea {
     opacity: 1;
     letter-spacing: 0.9px;
     border: none;
-    padding: 12px 0;
+    padding: 12px 64px;
     margin-bottom: 0;
   }
+.animation {
+  font-size: 13px;
+  transition: .5s;
+  width: 340px;
+}
 @media screen and (min-width: 376px) {
   .contact-zone {
     text-align: center;

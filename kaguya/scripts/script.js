@@ -32,6 +32,10 @@ $(function () {
   $('.submission-btn').click(function () {
     $(this).val("TRANSMISSION COMPLETED");
     $(this).addClass('animation');    
-  })
-
+  });
+  // モバイル画面での制御
+  $('.submission-btn-responsive').click(function () {
+    $(this).val("TRANSMISSION COMPLETED");
+    $(this).addClass('animation');    
+  });
 });
