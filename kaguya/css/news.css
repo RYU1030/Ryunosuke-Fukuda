@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* キービジュアル */
+.key-visual {
+  background: url("../images/news_top_sp.png");
+}
+@media screen and (min-width: 376px) {
+  .key-visual {
+    background: url("../images/news_top@2x.png");
+    background-size: 100% 100%;
+  }
+}
+/* キービジュアルおわり */
+/* 入荷情報 */
+.stock-info {
+  margin-bottom: 256px;
+}
+.furniture-news-list li {
+  margin: 0 auto;
+  position: relative;
+  height: 272px;
+  width: 272px;
+  background-color: #000;
+  margin-bottom: 24px;
+}
+.furniture-news-list img {
+  position: relative;
+  height: 272px;
+  width: 272px;
+  opacity: 0.6;
+}
+.furniture-news-list li:last-child {
+  margin-bottom: 32px;
+}
+.update {
+  color: #FFF;
+  font-size: 15px;
+  position: absolute;
+  letter-spacing: -0.85px;
+  bottom: 135px;
+  left: 36.5px;
+}
+@media screen and (min-width: 376px) {
+  .stock-info h2 {
+    margin-bottom: 56px;
+    letter-spacing: 2.3px;
+    text-align: center;
+  }
+  .furniture-news-list {
+    display: flex;
+    justify-content: center;
+    margin: 0 96px 32px 96px;
+  }
+  .furniture-news-list li {
+    position: relative;
+    height: 320px;
+    width: 320px;
+    margin: 0 64px 0 0;
+    text-align: center;
+  }
+  .furniture-news-list li:last-child {
+    margin-right: 0;
+  }
+  .furniture-news-list img {
+    position: relative;
+    height: 320px;
+    width: 320px;
+    opacity: 1;
+  }
+  .update {
+    color: #FFF;
+    font-size: 17px;
+    padding-top: 144px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    letter-spacing: -0.85px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+  }
+}
+/* 入荷情報 おわり */

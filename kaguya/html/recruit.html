@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>採用</title>
-  <link href="../template/style.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="../css/reset.css" rel="stylesheet">
+  <link href="../css/template.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/mobile.css">
+  <link href="../css/recruit.css" rel="stylesheet">
+  <script src="../scripts/jquery.min.js"></script>
+  <script src="../scripts/script.js"></script>
 </head>
 
 <body>
   <header>
     <div class="header-container">
-      <img class="responsive-logo" src="../template/images/logo_footer@2x.png" alt="HTMLCSS">
-      <img class="default-logo" src="../template/images/logo_header@2x.png" alt="HTMLCSS">
+      <img class="responsive-logo" src="../images/logo_footer@2x.png" alt="HTMLCSS">
+      <img class="default-logo" src="../images/logo_header@2x.png" alt="HTMLCSS">
       <nav class="page-direction">
         <ul class="page-list">
-          <li><a href="../home/index.html">HOME</a></li>
-          <li><a href="../news/index.html">NEWS</a></li>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="news.html">NEWS</a></li>
           <li><a class="current-page" href="#">RECRUIT</a></li>
-          <li><a href="../contact/index.html">CONTACT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
     </div>
+    <div class="mobile-header">
+      <img class="responsive-logo" src="../images/logo_footer@2x.png" alt="HTMLCSS">
+      <div class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <nav class="mobile-menu">
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="#">RECRUIT</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -34,7 +55,8 @@
       <table>
         <tr>
           <td class="job-type" rowspan="3"><span>販売員</span></td>
-          <td><p>仕事内容</p>
+          <td>
+            <p>仕事内容</p>
             <ul>
               <li>海外から輸入している家具の販売 </li>
               <li>商品管理 </li>
@@ -56,8 +78,11 @@
           </td>
         </tr>
         <tr>
-          <td class="job-type" rowspan="3"><p>家具職人</p></td>
-          <td><p>仕事内容</p>
+          <td class="job-type" rowspan="3">
+            <p>家具職人</p>
+          </td>
+          <td>
+            <p>仕事内容</p>
             <ul>
               <li>家具作成に必要な材料の発注</li>
               <li>商品管理 ・オーダーメイド家具の相談</li>
@@ -84,13 +109,13 @@
   </main>
   <footer>
     <div class="footer-container">
-      <img src="../template/images/logo_footer@2x.png" alt="HTMLCSS">
+      <img src="../images/logo_footer@2x.png" alt="HTMLCSS">
       <nav class="page-direction">
         <ul class="page-list">
-          <li><a href="../home/index.html">HOME</a></li>
-          <li><a href="../news/index.html">NEWS</a></li>
-          <li><a href="../recruit/index.html">RECRUIT</a></li>
-          <li><a href="../contact/index.html">CONTACT</a></li>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="recruit.html">RECRUIT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
     </div>
