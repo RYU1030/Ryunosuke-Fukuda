@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* キービジュアル */
 .key-visual {
-  background: url("images/contact_top_sp/contact_top_sp.png");
+  background: url("../images/contact_top_sp.png");
 }
 .key-visual h1 {
   color: #FFF;
@@ -9,7 +9,7 @@
 @media screen and (min-width: 376px) {
   .key-visual {
     height: 456px;
-    background: url("images/contact_top/contact_top@2x.png");
+    background: url("../images/contact_top@2x.png");
     background-size: 100% 100%;
   }
   .key-visual h1 {
@@ -52,7 +52,7 @@ textarea {
   display: none;
 }
 .submission-btn-responsive {
-  font-size: 18px;
+  font-size: 15px;
   width: 173px;
   border-radius: 30px;
   color: #707070;
@@ -60,8 +60,13 @@ textarea {
   opacity: 1;
   letter-spacing: 0.9px;
   border: none;
-  padding: 12px 0;
+  padding: 12px 64px;
   margin-bottom: 0;
+}
+.animation {
+  font-size: 13px;
+  transition: .5s;
+  width: 340px;
 }
 @media screen and (min-width: 376px) {
   .contact-form {
@@ -106,9 +111,23 @@ textarea {
     background-color: #D1D1D1;
     opacity: 1;
     border: none;
-    width: 161px;
+    width: 160px;
     padding: 7px 60px 6px 60px;
     margin-bottom: 0;
+    transition: 3s;
+  }
+  .submission-btn:hover {
+    color: #d1d1d1;
+    background-color: #918F89;
+    cursor: pointer;
+  }
+  .animation {
+    transition: .7s;
+    width: 320px;
+  }
+  .animation:hover {
+    color: #707070;
+    background-color: #D1D1D1;
   }
 }
 /* お問い合わせおわり */
